@@ -1,0 +1,172 @@
+<!doctype html>
+<html>
+<head>
+<title> Form Example-2 </title>
+<style>
+
+#design{
+	
+	text-align:left;
+	background-color:#ff8800;
+	color:#e9e908;
+	font-family:none;	
+}
+table{
+	width:500px;
+	text-align:center;
+	background-color:rgb(11 3 28 / 82%);
+	border:none;
+}
+	
+
+#design1{
+		text-align:center;
+		background-color:rgb(15 231 223);
+		font-family:ui-serif;
+}
+th{ 
+		height:10px;
+		width:200px;
+		/*background-color:rgb(11 3 28 / 82%);*/
+		color:#d9d914;
+		line-height:40px;
+}
+td{ 
+		height:10px;
+		width:300px;
+		text-align:left;
+		/*background-color:rgb(11 3 28 / 82%);*/
+		color:#d9d914;
+		border:none;
+}
+input[type="text"]{
+		width:250px;
+		border:none;
+		background-color:white;
+		border:none;
+}
+input[type="number"]{
+		background-color:white;
+		font-family:inherit;
+		border:none;		
+}
+select{
+		background-color:white;
+		font-family:inherit;
+		border:none;
+}
+input[type="Radio"]{
+		background-color:white;
+		border:none;
+		
+}
+input[type="Email"]{
+		background-color:white;
+		border:none;
+}
+input[type="password"]{
+		width:250px;
+		border:none;
+		background-color:white;
+}
+input[type="Submit"]{
+		width:80px;
+		height:30px;
+		background-color:rgb(59 187 30);
+		color:white;
+		border:none;
+}	
+input[type="reset"]{
+		width:80px;
+		height:30px;
+		background-color:rgb(241 33 17);
+		color:white;
+		border:none;
+}
+</style>	
+</head>
+<body> <h1> Example-2 </h1>
+	<form>
+	
+	<table align="center">
+	<tr>
+				<th id="design" colspan="4"> Sign Up </th>
+	</tr>
+		
+		<tr>
+				<th> First Name </th>
+				<td> <input type="Text" placeholder="Enter First Name" value="" name="Fname"> </td>
+		</tr> 
+		<tr>
+				<th> Last Name </th>
+				<td> <input type="Text" placeholder="Enter Last Name" value="" name="Lname"> </td>
+		</tr> 	
+		<tr>
+		<th>Date Of birth</th>
+				<td><input type="NUMBER" step="1" min="1" max="31" placeholder="Date" >
+			
+				<select style="font-weight:bold;">
+				<option> Month </option>
+				<option> January </option>
+				<option> Febuary</option>
+				<option> March</option>
+				<option> April</option>
+				<option> May</option>
+				<option> June</option>
+				<option> July</option>
+				<option> August</option>
+				<option> September</option>
+				<option> October</option>
+				<option> November</option>
+				<option> December</option>
+				</select> 
+				<input type="NUMBER" step="1" min="1975" max="2022" placeholder="Year">
+				</td>
+		</tr>
+		
+		<tr>
+				<th>Gender</th>
+				<td> <input type="radio" value="m" name="Gender"> Male 
+						<input type="radio"  value="f" name="Gender"> Female 
+			    </td>
+		</tr>
+		<tr>
+		<th>Country</th>
+			 
+				<td> <select style="font-weight:bold;">
+				<option> Country </option>
+				<option> abio </option>
+				<option> abcd </option>
+				</select> </td>
+		</tr>
+		<tr>
+			<th> E-mail </th> 
+			<td> <input type="Email" name="Email-ID"; placeholder="Enter E-mail"> </td> 
+		</tr> 
+		<tr>
+			<th> Phone </th> 
+			<td> <input type="number" name="phone no."; placeholder="Enter Phone"> </td> 
+		</tr> 
+		<tr>
+			<th> Password </th> 
+			<td> <input type="password" placeholder="" maxlength="8"> </td>  
+		</tr> 
+		<tr>
+			<th> Confirm Password </th> 
+			<td> <input type="password" placeholder="" maxlength="8"> </td>  
+		</tr> 
+		<tr>
+				<th></th>
+				<td> <input type="checkbox" name="Agree" value=""> I Agree to the terms of use </td> <br/>
+		</tr>
+		<tr>
+			<th style="text-align:right; background-color:#ff8800;"  colspan="4">
+				<input type="Submit" value="Submit" > 
+				<input type="reset" value="Cancel" > 
+			</th>
+		</tr> 
+	</table>
+	</form>
+		
+</body> 
+</html>
